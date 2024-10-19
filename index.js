@@ -33,9 +33,9 @@ require('./intermediate-level-JavaScript-exercises/exercise-14-throttleFunction'
 require('./intermediate-level-JavaScript-exercises/exercise-15-basicTodoList');           // Implement a Basic To-Do List
 
 require('./advanced-level-JavaScript-exercises/exercise-1-classExample');
-require('./advanced-level-JavaScript-exercises/exercise-2-modulePattern');
-require('./advanced-level-JavaScript-exercises/exercise-3-iteratorExample');
-require('./advanced-level-JavaScript-exercises/exercise-4-webWorkerExample');
-require('./advanced-level-JavaScript-exercises/exercise-5-reactComponent');
+require('./advanced-level-JavaScript-exercises/exercise-2-httpClient/httpClient.js');
+require('./advanced-level-JavaScript-exercises/exercise-3-drag-and-drop/dragDrop.js');
+require('./advanced-level-JavaScript-exercises/exercise-4-pipeline-exercise/script.js');
+require('./advanced-level-JavaScript-exercises/exercise-5-lazy-loading-images/script.js');
 
 console.log("All exercises have been loaded successfully.");
