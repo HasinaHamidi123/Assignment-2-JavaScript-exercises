@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Intersection of Two Arrays</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../intermediate-level-JavaScript-exercises/exercise-12-findIntersection.js"></script>
+</head>
+<body>
+<h1>Find Intersection of Two Arrays</h1>
+<p>Enter two arrays as comma-separated values in the prompt that appears after loading the page.</p>
+<script>
+    const array1 = prompt("Enter the first array (comma-separated):").split(",").map(Number);
+    const array2 = prompt("Enter the second array (comma-separated):").split(",").map(Number);
+    const result = findIntersection(array1, array2);
+    document.body.innerHTML += `<h2>Common Elements:</h2><p>${result.join(", ")}</p>`;
+</script>
+<a href="../index.html">Back to Index</a>
+<script src="../intermediate-level-JavaScript-exercises/exercise-12-findIntersection.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Drag and Drop UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Simple Drag and Drop Interface</h1>
+
+<!-- Section where draggable elements are available -->
+<div class="container">
+  <div class="draggable-container" id="draggableContainer">
+    <h2>Draggable Items</h2>
+    <div class="draggable" id="item1" draggable="true">Item 1</div>
+    <div class="draggable" id="item2" draggable="true">Item 2</div>
+    <div class="draggable" id="item3" draggable="true">Item 3</div>
+  </div>
+
+  <!-- Drop area where items can be dragged to -->
+  <div class="drop-container" id="dropContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>Drop Here</h2>
+    <p class="placeholder">Empty Box</p>
+  </div>
+</div>
+
+<script src="dragDrop.js"></script>
+</body>
+</html>

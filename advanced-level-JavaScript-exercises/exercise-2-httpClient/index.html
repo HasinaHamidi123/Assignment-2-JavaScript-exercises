@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTTP Client</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input, button {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+<h1>Basic HTTP Client</h1>
+
+<div>
+  <h2>GET Request</h2>
+  <button id="getBtn">Fetch Data</button>
+  <pre id="getResult"></pre>
+</div>
+
+<div>
+  <h2>POST Request</h2>
+  <input type="text" id="postInput" placeholder="Enter data to post" />
+  <button id="postBtn">Send Data</button>
+  <pre id="postResult"></pre>
+</div>
+
+<div>
+  <h2>PUT Request</h2>
+  <input type="text" id="putInput" placeholder="Enter data to update" />
+  <button id="putBtn">Update Data</button>
+  <pre id="putResult"></pre>
+</div>
+
+<div>
+  <h2>DELETE Request</h2>
+  <input type="number" id="deleteId" placeholder="Enter ID to delete" />
+  <button id="deleteBtn">Delete Data</button>
+  <pre id="deleteResult"></pre>
+</div>
+
+<script src="httpClient.js"></script>
+</body>
+</html>

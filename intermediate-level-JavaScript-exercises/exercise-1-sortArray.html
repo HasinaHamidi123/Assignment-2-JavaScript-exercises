@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort an Array of Numbers</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../intermediate-level-JavaScript-exercises/exercise-1-sortArray.js" defer></script>
+</head>
+<body>
+<h1>Sort an Array of Numbers</h1>
+<label for="numberInput">Enter numbers separated by commas:</label>
+<input type="text" id="numberInput" placeholder="e.g., 5, 3, 8, 1, 2">
+<button id="sortButton">Sort Numbers</button>
+<p id="result"></p> <!-- Placeholder for sorted numbers -->
+<a href="../index.html">Back to Index</a>
+<script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Attach event listener to the button
+        document.getElementById('sortButton').addEventListener('click', sortArray);
+    });
+</script>
+<a href="../index.html">Back to Index</a>
+<script src="../intermediate-level-JavaScript-exercises/exercise-1-sortArray.js"></script>
+</body>
+</html>

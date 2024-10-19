@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Clone an Object</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../intermediate-level-JavaScript-exercises/exercise-13-deepClone.js"></script>
+</head>
+<body>
+<h1>Deep Clone an Object</h1>
+<p>Enter an object in JSON format in the prompt that appears after loading the page.</p>
+<script>
+    const input = prompt("Enter an object in JSON format:");
+    try {
+        const originalObject = JSON.parse(input);
+        const clonedObject = deepClone(originalObject);
+        document.body.innerHTML += `<h2>Original Object:</h2><pre>${JSON.stringify(originalObject, null, 2)}</pre>`;
+        document.body.innerHTML += `<h2>Cloned Object:</h2><pre>${JSON.stringify(clonedObject, null, 2)}</pre>`;
+    } catch (error) {
+        alert("Invalid JSON format. Please try again.");
+    }
+</script>
+<a href="../index.html">Back to Index</a>
+<script src="../intermediate-level-JavaScript-exercises/exercise-13-deepClone.js"></script>
+</body>
+</html>
